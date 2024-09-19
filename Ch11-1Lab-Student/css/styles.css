@@ -1,0 +1,32 @@
+/* Angel Velazquez
+   September 19
+*/
+
+/* Set a background color for header and footer */
+header, footer {
+    background-color: lightblue;
+}
+
+/* Set the font size for paragraph, ul, and li tags */
+p, ul, li {
+    font-size: 20px;
+}
+
+/* Link styling with pseudo-classes */
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: purple;
+}
