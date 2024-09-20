@@ -1,0 +1,50 @@
+/* Angel Velazquez
+   September 19
+*/
+
+
+
+/** BASIC STYLES - Video 12.1 **/
+body
+{
+    color: #333333;
+    font-size: 16px;
+}
+a
+{
+    color: darkred;
+}
+a:hover
+{
+    color: lightcoral;
+}
+
+
+/** TARGETING CLASSES - Video 12.2 **/
+.intro{
+    font-size: 24px;
+    color: darkcolor;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+.highlight
+{
+    background-color: lightgoldenrodyellow;
+    padding: 5px; 
+}
+
+
+/** ALERT CLASSES - Video 12.3 **/
+.alert
+{
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.alert.blue
+{
+    background: blue;
+}
