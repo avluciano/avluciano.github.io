@@ -6,7 +6,7 @@ body
 {
     font-family: Arial, sans-serif;
     font-size: 1em;
-    background-image: url("/Users/angelvelazquez/Downloads/Student-CSSGossip/image/abstractPic.jpg") ;
+    background-image: url("image/abstractPic.jpg") ;
     background-size: cover;
 }
 
@@ -59,7 +59,7 @@ img.peace-sign
   
 article ul
 {
- list-style-image: url("/Users/angelvelazquez/Downloads/Student-CSSGossip/image/peaceSign.png");
+ list-style-image: url("image/peaceSign.png");
 }
 
 #outerwrapper 
