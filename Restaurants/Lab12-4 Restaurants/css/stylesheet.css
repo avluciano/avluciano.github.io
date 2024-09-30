@@ -1,0 +1,49 @@
+
+body {
+ background: #b0e0fc; 
+}	
+
+#outerwrapper {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-style: dotted;
+}
+
+/* add first-of-type to target h2 */
+h2 :first-of-type, h3 {
+  padding-left: .5em;
+}
+
+/* add nth-child(odd) to target ul li */
+ul li :first-of-type {
+  font-style: italic;
+}
+
+/* unvisited link */
+li a:link {
+  color: black;
+}
+
+/* visited link */
+li a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+li a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+li a:active {
+  color: greenyellow;
+}
+
+
+footer
+{
+  background: #ffffff; 
+  text-align: center;
+  padding: .25em;
+}
