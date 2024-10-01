@@ -1,0 +1,22 @@
+
+
+
+#outerwrapper {
+
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+float: left;
+
+}
+
+.floatright {
+float: right;
+
+}
+
+main, footer { 
+clear: both;
+}
