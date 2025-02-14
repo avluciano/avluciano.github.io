@@ -1,0 +1,9 @@
+
+.my-shape {
+    transition: all 1.5s;
+}
+
+svg:hover .my-shape {
+    fill: Purple;
+    transform: scale(.9s); 
+}
