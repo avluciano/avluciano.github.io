@@ -1,0 +1,16 @@
+/* Practice CustomFonts Style Sheet */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,600');
+
+.websafe{
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;}
+
+.google {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+}
