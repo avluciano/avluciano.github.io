@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+
+    <!--    
+        Angel Velazquez
+        Mar 11, 2025
+    -->
+
+    <meta name="author" content="Angel Velazquez">
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact form for Angel Velazquez's portfolio">
+    <meta name="keywords" content="client-side, server-side, C#, HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="css/ContactFormStyles.css" rel="stylesheet">
+
+</head> 
+
+<body>
+
+    <div id="centerstyle">
+        <form action="mailto:angelvelazquezlino@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+
+            <fieldset>
+                <legend>How do I contact you?</legend>
+                
+                <!-- Company Name (example provided) -->
+                <div>         
+                    <label for="compName">Company Name:</label>
+                    <input type="text" id="compName" name="compName" required>
+                </div>
+
+                <!-- Person to Contact -->
+                <div>
+                    <label for="contactPerson">Person to Contact:</label>
+                    <input type="text" id="contactPerson" name="contactPerson" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Phone Number -->
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>What opportunities are available at your company?</legend>
+                <!-- Select Box for Type of Position -->
+                <div>
+                    <label for="position">Type of Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="">-- Select Position --</option>
+                        <option value="internship">Internship</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="contract">Contract</option>
+                        <option value="temporary">Temporary</option>
+                        <option value="on-call">On call</option>
+                    </select>
+                </div>
+                <!-- Radio Buttons for How did you find me? -->
+                <div>
+                    <p>How did you find me?</p>
+                    <label for="sourceIndeed"><input type="radio" id="sourceIndeed" name="source" value="indeed" required> Indeed</label>
+                    <label for="sourceLinkedIn"><input type="radio" id="sourceLinkedIn" name="source" value="linkedin"> LinkedIn</label>
+                    <label for="sourceJobFair"><input type="radio" id="sourceJobFair" name="source" value="jobfair"> Job Fair</label>
+                    <label for="sourceCWIPartner"><input type="radio" id="sourceCWIPartner" name="source" value="cwi-partner"> CWI Corporate Partner</label>
+                </div>
+                <!-- Text Area for Additional Comments -->  
+                <div>
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" cols="100" rows="10" placeholder="Enter any additional details..."></textarea>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+        <div id="monica-content-root" class="monica-widget" style="pointer-events: auto;"></div>
+    </div>
+</body>
+</html>

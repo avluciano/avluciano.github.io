@@ -1,0 +1,27 @@
+/*  Angel Velazquez
+    Feb 25 , 2025
+*/ 
+
+table {
+    border: 2px solid #000000;
+    background-color: cyan;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: left;
+    font-size: 20px;
+}
+
+caption {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+thead {
+    background-color: pink;
+}
+
+tr:nth-child(even) {
+    background: pink;
+}
