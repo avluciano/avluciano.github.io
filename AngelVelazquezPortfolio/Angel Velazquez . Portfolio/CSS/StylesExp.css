@@ -1,0 +1,406 @@
+/* 
+    Angel Velazquez
+    * Un-Validated * S25 * 
+*/
+
+/* --------------------------------------------------
+   Import Custom Fonts
+----------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kapakana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* ------------   CSS Custom Properties (Variables) ------------ */
+:root {
+  /* Global Fonts */
+  --logo-font: 'Italiana', cursive;
+  --nav-font: 'Luxurious Script', cursive;
+  --body-font: 'Aboreto', sans-serif;
+  --btn-font: 'Aboreto', sans-serif;
+
+  /* Index Page */
+  --index-six-caps-font: 'Six Caps', sans-serif;
+  --index-italiana-font: 'Italiana', cursive;
+  --index-spirax-font: 'Spirax', cursive;
+
+  /* About Page */
+  --about-kapakana-font: 'Kapakana', sans-serif;
+  --about-aboreto-font: 'Aboreto', sans-serif;
+  --about-italiana-font: 'Italiana', cursive;
+
+  /* Experience Page */
+  --experience-kapakana-font: 'Kapakana', sans-serif;
+  --experience-luxurious-font: 'Luxurious Script', cursive;
+  --experience-lexenddeca-font: 'Lexend Deca', sans-serif;
+
+  /* Contact Page */
+  --contact-kapakana-font: 'Kapakana', sans-serif;
+  --contact-luxurious-font: 'Luxurious Script', cursive;
+
+  /* Colors */
+  --0-color: #FFFFFF;
+  --1-color: #000000;
+  --index-bg-color: #c3b39e;
+  --about-bg-color: #514938;
+  --experience-bg-color: #34231B; /* #443f33 */
+  --contact-bg-color: #716E66;
+  --footer-bg-color: #0B0B0B;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------  EXPERIENCE SECTION  ----------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* -------------  EXPERIENCE : EXP HER0 SECTION  ----------- */
+
+.experience-hero { 
+  position: relative; 
+  display: flex;  
+  flex-direction: column; 
+  max-width: 1250px; 
+  min-height: 100vh; 
+} 
+
+.experience-hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: url("../Images/ExperienceBG.jpeg") center/cover no-repeat;
+  background-color: var(--experience-bg-color);
+  line-height: 20px; /*   + + +   */
+} 
+
+.experience-hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7); 
+  z-index: 1;
+  pointer-events: none;
+} 
+
+.experience-hero-container .social-icons-experience,
+.experience-hero-container .info {
+  position: relative;
+  z-index: 2;
+} 
+
+.experience-hero-container .info {
+  flex: 1;
+  padding: 300px 0 480px 50px;
+} 
+
+.experience-hero-container .info h1{
+  font-size: 250px;
+  font-family: var(--contact-luxurious-font);                 /* ERROR : FONT */ 
+  color: var(--0-color);
+  line-height: 160px;
+}
+
+.experience-hero-container .info p{
+  font-family: var(--body-font);
+  color: var(--0-color);
+  font-size: 1.2rem;
+  max-width: 820px;
+  line-height: 1.6rem;
+  padding: 20px 0 0 0;
+}
+
+.experience-hero-container .social-icons-experience {
+  flex: 0 0 auto;          
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+  margin-right: 40px;
+  padding: 80px 0 175px 350px;
+} 
+
+.experience-hero-container .social-icons-experience a { 
+  color: var(--0-color);
+  font-size: 1.5em;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--experience-bg-color);
+
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: var(--1-color);
+  border: 1px solid var(--1-color);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-hero-container .social-icons-experience a:hover {
+  color: var(--0-color);
+  background-color: var(--experience-bg-color);
+  box-shadow: 0 0 1.25rem var(--1-color);
+  transform: scale(1.05) translateY(-0.3125rem);
+}
+
+.btn-experience {
+  background: var(--1-color);
+  color: var(--0-color);
+  font-family: var(--btn-font);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 20px 30px; 
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 0;
+}
+
+.btn-experience:hover {
+  color: var(--0-color);
+  border: none;
+  background-color: var(--experience-bg-color);
+  box-shadow: 0 0 1.25rem var(--0-color);
+  transform: scale(1.05) translateY(-0.32rem);
+}
+
+/* ------------- ^ EXPERIENCE : EXP HER0 SECTION ^ ----------- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* -------------  EXPERIENCE : EXP TABLE SECTION  ----------- */
+
+.experience {
+  height: 100%;
+  background-color: var(--experience-bg-color);
+}
+
+.exp-h1 {
+  font-size: 5rem;
+  padding: 8rem 0 0;
+  color: var(--0-color);
+  text-align: center; 
+  font-family: var(--experience-luxurious-font);
+}
+
+.exp-container {
+  width: 60%;
+  margin: 1.5rem auto 20rem auto;
+  padding: 3rem 5rem 2rem 5rem;
+  background-color: #3b261f;
+  border-radius: 15px;
+  color: var(--0-color);
+  font-family: var(--body-font);
+  /*   (+) Bold   */
+}
+
+.exp-description {
+  text-align: center; 
+  font-size: .9rem; 
+  max-width: 900px; 
+  margin: 0 auto 2rem; 
+  text-transform: uppercase; 
+  line-height: 1.8; 
+}
+
+.exp-learn-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--0-color);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--0-color);
+}
+
+.exp-divider {
+  border: none;
+  height: 1px;
+  background-color: #7e6b61;
+  margin: 2rem 0;
+}
+
+.exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 260px;
+  font-size: 13px;
+  border-radius: 36px;
+  margin: 0 auto 0px;
+}
+
+.exp-table th, td {
+  padding: 1rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.exp-table th {
+  font-weight: bold;
+  color: #d3c8c3;
+  text-align: center;
+}
+
+.exp-status-check {
+  color: #7cf07c;
+  font-weight: bold;
+}
+
+.exp-section-heading {
+  padding: 1rem auto 0.5rem;
+  color: #d3c8c3;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.exp-course-row:not(:last-child) {
+  border-bottom: 1px solid #5d453b;
+}
+
+.exp-course-name {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exp-tech-list {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 750px) {
+  .experience_card img {
+      width: 80px; 
+      height: auto;
+  }
+  .experience_card a.button {
+      font-size: .60em;
+  }
+}
+
+/* -----------^ EXPERIENCE TABLE ^------------- */
+/* --------- EXPERIENCE : PROJECTS ------------ */
+
+.experience_examples { 
+  font-size: 150px;
+  text-align: center;
+  color: var(--0-color);
+  font-family: var(--experience-luxurious-font);
+}
+
+.experience_catalogue {
+  margin: 64px auto 100px auto;
+  padding: 0 0 7rem 0;
+  color: var(--0-color);
+  font-family: var(--body-font);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.experience_card {
+  padding: 38px;
+  min-width: 260px;
+  height: fit-content;
+  margin-bottom: 100px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience_card-image {
+  width: 200px;
+  height: 125px;
+  object-fit: contain;
+}
+
+.experience_card-title {
+  margin-top: 47px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-var(--0-color));
+  text-align: center;
+}
+
+.experience_card-details {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.experience_description {
+  font-size: 15px; 
+  font-weight: 300;
+  text-align: center;
+  color: var(--color-var(--0-color));
+  max-width: 300px;
+  padding: 25px 0;
+}
+
+.experience_card-details a.button {
+  display: block;
+  width: 50%;
+  padding: 7px;
+  margin: 3px auto;
+  color: var(--0-color);
+
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.experience_card-details a:hover{
+    background: var(--primary-color);
+    color: var(--color-var(--0-color));
+    transform: scale(1.0) translateY(-5px);
+    box-shadow: 0  0 15px var(--0-color);
+}
+
+.experience_card.active-card {
+  background: var(--var(--1-color)-300);
+  min-width: 340px;
+}
+
+.experience_card.active-card .experience_card-image {
+  width: 350px;
+  height: 250px;
+}
+
+.experience_card.active-card .experience_card-title {
+  color: var(--midred-200);
+  font-size: 32px;
+}
+
+/* ------------- ^ EXPERIENCE : PROJECTS ^ ----------- */
