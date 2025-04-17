@@ -18,7 +18,7 @@ header {
 
 nav ul { 
 	background-color: #90C7E3;
-    font-weight: bold;
+    	font-weight: bold;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -34,19 +34,24 @@ nav ul li a {
 	font-weight: bold;
 }
 
+p span { 
+	color: #3399CC; 
+  	font-weight: bold;
+}
+
 h1 { 
  	margin-bottom: 0; 
-    font-family: Georgia, 'Times New Roman', serif; 
+    	font-family: Georgia, 'Times New Roman', serif; 
 }
 
 h2 { 
  	color: #3399CC; 
-    font-family: Georgia, 'Times New Roman', serif; 
+    	font-family: Georgia, 'Times New Roman', serif; 
 }
 
 h3 { 
 	color: #000033;
-    font-family: Georgia, 'Times New Roman', serif; 
+    	font-family: Georgia, 'Times New Roman', serif; 
 }
 
 ul { 
@@ -66,7 +71,7 @@ dt {
 
 .resort { 
 	color: #5C7FA3; 
-    font-weight: bold;
+    	font-weight: bold;
 }
 
 #contact { 
@@ -84,7 +89,7 @@ h2 {
 }
 
 nav ul {
-    display: block;
+    	display: block;
 }
 
 /*************************** Tablet Viewport ***************************/
