@@ -1,0 +1,27 @@
+/* 
+    Angel Velazquez 
+    April 22 . 2025
+*/
+
+
+img {
+    padding: 20px;
+    width: 250px;
+    transition: width 2s ease 0.5s; 
+}
+
+img:hover {
+    width: 350px;
+}
+
+
+input {
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: all 1s ease-out; 
+}
+
+input:focus {
+    font-size: 2rem;
+    padding: 10px;
+}
